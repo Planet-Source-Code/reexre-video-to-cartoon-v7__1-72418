@@ -1,0 +1,5 @@
+VIDEO TO CARTOON V6.1         23.09.2009
+VIDEO TO CARTOON V7.0           .01.2010
+
+Converts Video to Cartoon! - See Srceenshot - Basically it reduces the numbers of colors and applies a Contour. But everything is enhanced by simply and powerful potrace.exe that brings so cool curves. ---------- This application uses FreeImage.dll and Potrace.exe. This files should be included in this Zip. If Not so, included Downloadhelper.vbp will bring you to that locations.
+It doesn't manage Audio. You can do it manually with VirtualDub. ------- V7.0 *NEW* BILATERAL FILTER. Applicable Parameters: "Bilateral Contour" and "Contour Parameters"
