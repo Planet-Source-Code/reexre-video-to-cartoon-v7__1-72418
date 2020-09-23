@@ -1,0 +1,82 @@
+VIDEO TO CARTOON V7.0
+
+
+HELP
+
+------------------------------
+
+Version 7 introduce a new Cartoonization Mode: by Iteration Bilateral Filtering.
+Cartoonization mode are Two: BILATERAL - NOT BILATERAL
+
+BILATERAL MODE  - Apply Bilateral Filtering [Very Slow :( ]. Bilateral Mode Parameters are only these: 'Color Paramters': Brightness and Contrast, plus main 'CONTOUR Params' slider. (To indicate the Amount of Contour)
+
+------------------------------
+
+
+OPEN AVI  - Select the Source Video to Convert to Cartoon. If you want to select another video it is not needed to close it, so click again Open Avi.
+
+GO TO FRAME   - Go to a specific Frame.
+
+START  - Select current Frame as the First of the Sequence.
+
+END  - Select current Frame as the Last of the Sequence.
+
+OUTPUT WIDTH  - Set the Video Output Width. The height is base on Input aspect Ratio.
+
+FPS  - Choose the Video Output Frames Per Seconds. (Min 1 , Max 30) 
+
+QUANTIZE MODE  - There are Two Quantization Mode (Ways to reduce the Colors Number): WUQANT and NNQUANT. Unchecked is WUQUANT, this mode is more based on Colors (Hue). Checked is NNQUANT, this mode is more based on Brightness. Quantization is done by FreeImageLib.
+
+COLORS PARAMETERS  - 
+       Saturation - 0 kinda Sepia - 1 Black and white - 10 No Variation - 20,30,40... 2,3,4 times Saturation.
+
+CONTOUR PARAMETERS  - 
+
+COLOR NUMBER Slidebar  - Here you can choose how many colors will be used in the Cartoonized Image. Usually a big number is not needed. Values between 5 and 10 are Suggested.
+
+PALETTE  - The Colors to use are displaied here. To manually customize palette click a Color.
+
+GLOBAL PALETTE CheckBox  - Unchecked means that Quantization (and so a new palette) will be done for each frame Cartoonized, so the Palette will be computed for each frame.
+Checked means that the Dispalyed Palette will be used do Cartoonize each Frame.
+
+FIND GLOBAL PALETTE  - Find a Platte that should be good for the selected sequence of frames. Notice, To Use this Palette 'Global Palette' must be checked. (It is Drawn a big image with NxN frames between the Sequence, then it is Quantized). ONE preview frame will be Cartoonized After Global Palette Creation.
+
+PREVIEW THIS FRAME  - Cartoonize for preview Current Frame. (Bug to solve: if it Dosen't stop click Abort.)
+
+CARTOONIZE ALL  - Begin the cartoonization of Sequence. See START and END button for sequence selection.
+
+ABORT  - Stop Cartoonization Process. (Click once).
+
+SAVE AVI...  - After all frames Creation click here to Save all frames as AVI. It will be promped for Avi FileName and Video Compression. You Can click here again to save it again. All the frames will not be deleted until you begin a new Cartoonization or you open a new Input Avi file.
+
+AUTO SAVE AVI  - After all frames Creation 'Save Avi...' is Run. Have Bug, leave Unchecked.
+
+PLAYER...  - If you Check AutoPlayAvi it is needed to click here to select the Player.
+
+AUTO PLAY AVI  - When Avi is finished then it will be played. Click 'Player...' to select your Avi Player.
+
+EXTRA FRAMES  - Number of Extra Frames between Each Frame. E.G. Ouput FPS=12, ExtraFrame=1 will create an AVI with 24 FPS with Each (12fps) Frame repeated 2 times. (Should be useful for improved compression Quality or Not to be quality killed by youtube.)
+
+SAVE/LOAD SETTINGS - Save Load Current Setting; Selected AviFile, First Frame, Last Frame, Output Width, Output FPS, Quantization Mode, Color Parameters, Contour Parameters, Number of Colors and Palette Colors.
+
+
+
+Still Bugs... hope to fix...
+
+Thanks to
+
+POTRACE.EXE
+http://potrace.sourceforge.net/
+
+FreeImage.dll
+http://freeimage.sourceforge.net/download.html
+
+http://www.shrinkwrapvb.com/avihelp/avihelp.htm
+
+"SetBitmapBits" by DreamVB from Planet Source Code
+
+
+
+Roberto Mior  |  reexre@gmail.com
+
+
